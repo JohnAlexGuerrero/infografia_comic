@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" >
+    <title>{% block title %}Mi Sitio{% endblock %}</title>
+</head>
+<body>
+    <header class="sticky-header__header">
+        <!-- Aquí puedes colocar tu encabezado común -->
+    </div>
+    <div id="content">
+        {% block content %}
+        <!-- El contenido específico de cada página se colocará aquí -->
+        {% endblock %}
+    </div>
+    <div class="sticky-footer">
+        <header class="sticky-footer__header">...</header>
+        <main class="sticky-footer__main">...</main>
+        <footer class="sticky-footer__footer">...</footer>
+        <!-- Aquí puedes colocar tu pie de página común -->
+    </div>
+</body>
+</html>

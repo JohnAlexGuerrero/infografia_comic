@@ -1,0 +1,12 @@
+{% block content %}
+<div class="card-thumbnail">
+    <div class="image-thumbnail">
+        <img src="{{book.image.url}}" alt="{{book.title}}">
+        {% comment %} <span class="text">{{book.title}}</span> {% endcomment %}
+    </div>
+    {% comment %} <div>
+        <span class="title">Cool Chair</span>
+        <span class="price">$100</span>
+    </div> {% endcomment %}
+</div>
+{% endblock content %}
