@@ -4,5 +4,5 @@ from comic.models import Book
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    list_display = ('title','image','created_at')
+    list_display = ('title','thumbnail')
 

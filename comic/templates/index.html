@@ -5,12 +5,14 @@
 {% endblock title %}
 
 {% block content %}
-
-<div class="gallery">
-    {% for book in books %}
-        {% include 'comic/thumbnail.html' with book=book %}
+<div class="container">
+    {% for book in books  %}
+    <a href="{% url 'book_detail' pk=book.pk %}">
+        <div class="box">
+            <img src="{{book.thumbnail.url}}" alt="{{book.name}}">
+        </div>
+    </a>
     {% endfor %}
 </div>
-
 
 {% endblock content %}
